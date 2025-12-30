@@ -11,7 +11,7 @@
 }
 .banner__texto {
     font-weight: 500;
-        margin: 1em 0;
+    margin: 1em 0;
 }
 .banner__pesquisa {
     background: transparent;
@@ -29,5 +29,34 @@
     font-weight: 400;
     text-align: center;
     background: url("../img/Lupa.svg") no-repeat ;
+    
+}
 
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+    .banner__texto {
+        font-size: 18px;
+    }
+    .banner__pesquisa::placeholder {
+        font-size: 18px;
+        background: url("../img/Lupa.svg") no-repeat ;
+        background-position: 7em;
+    }
+    .banner__pesquisa {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .banner__pesquisa {
+        width: 35%;
+    }
+    .banner__pesquisa::placeholder {
+        background-position: 12em;
+    }
+    .banner {
+        padding: 6em 0;
+    }
 }

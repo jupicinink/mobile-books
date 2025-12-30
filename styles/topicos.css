@@ -70,7 +70,7 @@
 }
 .contato__texto {
     font-weight: 300;
-        margin: 1em 0;
+    margin: 1em 0;
 }
 
 .rodapé {
@@ -83,4 +83,44 @@
 .rodapé__titulo {
     font-size: 10px;
     font-weight: 500;
+}
+hr {
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .tópicos__titulo {
+        font-size: 24px;
+    }
+    .tópicos__link{
+        font-size: 16px;
+    }
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contato__titulo {
+        font-size: 24px;
+    }
+    
+    .contato__descrição {
+        margin-right: 1em;
+        width: 30%;
+    }
+    
+    .contato__email {
+        width: 30%;
+    }
+    
+}
+@media screen and (min-width: 1728px) {
+    .topicos{
+        padding: 3em 30vw;
+    }
+    .contato {
+        padding: 3em 20vw;
+    }
+    
 }
